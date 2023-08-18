@@ -64,7 +64,3 @@ class VGG19(nn.Module):
         x = self.classifier(x)
 
         return x
-
-
-model = VGG19()
-print(model)
