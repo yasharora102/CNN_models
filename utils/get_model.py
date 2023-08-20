@@ -1,9 +1,9 @@
-from models import inception_v1, mobilenet_v2, resNeXt50, vgg19, resnet18, resnet50
+from models import inception_v1, mobilenet_v2, resNeXt50, vgg19, resnet18, resnet50,efficientnet_b0
 
 
 def get_model(str_, num_classes):
     if str_ == "efficientnet_b0":
-        pass
+        return efficientnet_b0.EfficientNet_b0(num_classes)
 
     elif str_ == "inception_v1":
         return inception_v1.GoogleNet(num_classes)
